@@ -10,10 +10,13 @@
 
   <body>
     <header class="app_header">
+    <% if user_signed_in? %>
       <%= link_to "mission", root_path %>
       <%= link_to "classes", classes_path %>
       <%= link_to "guidelines",guidelines_path %>
       <%= link_to "blog", blog_index_path %>
+      <%= link_to "Logout", destroy_user_session_path, {method: :delete} %>
+    <% end %>
     </header>
     <%= yield %>
   </body>
