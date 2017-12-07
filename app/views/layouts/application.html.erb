@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TheMentalWealthCollective</title>
+    <title>The Mental Wealth Collective</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,12 @@
   </head>
 
   <body>
+    <header class="app_header">
+      <%= link_to "mission", root_path %>
+      <%= link_to "classes", classes_path %>
+      <%= link_to "guidelines",guidelines_path %>
+      <%= link_to "blog", blog_index_path %>
+    </header>
     <%= yield %>
   </body>
 </html>
