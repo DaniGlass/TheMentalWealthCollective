@@ -4,6 +4,22 @@
   <%= devise_error_messages! %>
 
   <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :date_of_birth %><br />
+    <%= f.date_select :dateofbirth, :include_blank => true, :start_year => Date.current.year - 13, :end_year => 1925  %>
+
+  </div>
+
+  <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
