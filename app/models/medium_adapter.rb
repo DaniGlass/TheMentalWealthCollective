@@ -9,7 +9,12 @@ module MediumAdapter
       url = "https://medium.com/feed/@ccmarie.clark"
       response = HTTP.get(url).to_s
       @doc = Nokogiri::XML(response)
-      @doc.xpath("//item")
+      @all_posts = @doc.xpath("//item")
+    end
+
+    def show_post
+      most_recent = @all_posts[0].to_s
+      most_recent
     end
   end
 end
