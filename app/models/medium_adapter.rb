@@ -7,8 +7,8 @@ module MediumAdapter
  # Returns a parsed json object of the request
     def posts
       url = "https://medium.com/feed/@ccmarie.clark"
-      response = HTTP.get(url)
-      @doc = Nokogiri::XML(response, nil, 'UTF-8')
+      response = HTTP.get(url).to_s
+      @doc = Nokogiri::XML(response, 'UTF-8')
       @posts_titles = @doc.css("title")
       @posts_dates = @doc.css("pubDate")
       # content and images aren't working
@@ -16,9 +16,9 @@ module MediumAdapter
      end
 
     def show_title1
-      @title = @posts_titles[1].to_s
-      @title = @title.gsub("<title>", "<h2>")
-      @title = @title.gsub("</title>", "</h2>")
+      @title = @posts_titles[2].to_s
+      @title = @title.gsub("<title><![CDATA[", "<h2>")
+      @title = @title.gsub("]]></title>", "</h2>")
       @title
     end
 
