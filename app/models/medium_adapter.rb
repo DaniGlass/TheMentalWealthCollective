@@ -8,16 +8,13 @@ module MediumAdapter
     def posts
       url = "https://medium.com/feed/@ccmarie.clark"
       response = HTTP.get(url).to_s
-      @doc = Nokogiri::XML(response, 'UTF-8')
+      @doc = Nokogiri.XML(response, 'UTF-8')
       @posts_titles = @doc.css("title")
       @posts_dates = @doc.css("pubDate")
-      # content and images aren't working
-      @posts_content = @doc.css("p")
      end
 
     def show_title1
-      @title = @posts_titles[2].to_s
-      @title = @title.gsub("<title><![CDATA[", "<h2>")
+      @title = @posts_titles[2].to_s.gsub("<title><![CDATA[", "<h2>")
       @title = @title.gsub("]]></title>", "</h2>")
       @title
     end
@@ -26,10 +23,17 @@ module MediumAdapter
       @posts_dates[0].to_s
     end
 
+    def response_wo_cdata
+      i_url = "https://medium.com/feed/@ccmarie.clark"
+      i_response = HTTP.get(i_url).to_s.gsub("<![CDATA[", "")
+      @i_doc = Nokogiri.HTML(i_response, 'UTF-8')
+    end
+
     def show_content1
-      # @doc
-      @posts_content
-      # "wtf"
+      @i_doc
+      @item = @i_doc.css("item")
+      @item1 = @item[0]
+      @item1.css("p").to_s
     end
 
   end

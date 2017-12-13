@@ -7,16 +7,15 @@
 <h1>Blog</h1>
 
 <% MediumAdapter.posts %>
-<p>
+<% MediumAdapter.response_wo_cdata %>
+
 <% @post_title = MediumAdapter.show_title1 %>
 <%= @post_title.html_safe %>
 
-</p>
-<p>
 <% @date = MediumAdapter.show_date1 %>
 <%= @date.html_safe %>
-</p>
-<p>
-<%= MediumAdapter.show_content1 %> </p>
+
+<% @content1 = MediumAdapter.show_content1 %>
+<%= @content1.html_safe %>
 </body>
 </html>
