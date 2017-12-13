@@ -5,7 +5,18 @@
 </head>
 <body>
 <h1>Blog</h1>
+
 <% MediumAdapter.posts %>
-<%= MediumAdapter.show_post %>
+<p>
+<% @post_title = MediumAdapter.show_title1 %>
+<%= @post_title.html_safe %>
+
+</p>
+<p>
+<% @date = MediumAdapter.show_date1 %>
+<%= @date.html_safe %>
+</p>
+<p>
+<%= MediumAdapter.show_content1 %> </p>
 </body>
 </html>
