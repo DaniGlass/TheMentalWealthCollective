@@ -29,12 +29,25 @@ module MediumAdapter
       @i_doc = Nokogiri.HTML(i_response, 'UTF-8')
     end
 
-    def show_content1
-      @i_doc
+    def get_item1
       @item = @i_doc.css("item")
       @item1 = @item[0]
+    end
+
+    def show_content1
       @item1.css("p").to_s
+    end
+
+    def show_image1
+      img = @item1.css("img")
+      img[0].to_s
     end
 
   end
 end
+
+
+
+
+
+

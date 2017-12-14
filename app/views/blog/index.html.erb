@@ -8,14 +8,18 @@
 
 <% MediumAdapter.posts %>
 <% MediumAdapter.response_wo_cdata %>
+<% MediumAdapter.get_item1 %>
 
-<% @post_title = MediumAdapter.show_title1 %>
-<%= @post_title.html_safe %>
+<% post_title = MediumAdapter.show_title1 %>
+<%= post_title.html_safe %>
 
-<% @date = MediumAdapter.show_date1 %>
-<%= @date.html_safe %>
+<% date = MediumAdapter.show_date1 %>
+<%= date.html_safe %>
 
-<% @content1 = MediumAdapter.show_content1 %>
-<%= @content1.html_safe %>
+<% content1 = MediumAdapter.show_content1 %>
+<%= content1.html_safe %>
+
+<% image = MediumAdapter.show_image1 %>
+<%= image.html_safe %>
 </body>
 </html>
