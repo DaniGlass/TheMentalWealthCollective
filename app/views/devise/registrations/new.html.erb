@@ -1,44 +1,64 @@
-<h2>Sign up</h2>
-
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
-
-  <div class="field">
-    <%= f.label :first_name %><br />
-    <%= f.text_field :first_name, autofocus: true %>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Register
+  </title>
+</head>
+<body class="devise">
+  <div class='center-logo'>
+    <%= image_tag('SMbrain.png')%>
   </div>
 
-  <div class="field">
-    <%= f.label :last_name %><br />
-    <%= f.text_field :last_name, autofocus: true %>
+    <h1>The Mental Wealth Collective</h1>
+    <h2>Register to Grow Your Mental Wealth</h2>
+
+  <div class='center-form'>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
+      <div class="field">
+        <%= f.text_field :first_name, autofocus: true, placeholder: "First Name" %>
+
+        <%= f.text_field :last_name, autofocus: true, placeholder: "Last Name" %>
+
+        <%= f.label :date_of_birth %>
+        <%= f.date_select :dateofbirth, :include_blank => true, :start_year => Date.current.year - 13, :end_year => 1925  %>
+      </div>
+
+      <div class="field">
+        <%= f.email_field :email, autofocus: true, placeholder: "Email" %>
+
+        <%= f.password_field :password, autocomplete: "off", placeholder: "Password" %>
+
+        <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Re-enter Password" %>
+
+        <%= f.submit "Sign Up" %>
+
+        <details>
+        <% if @minimum_password_length %>
+        <em>Password must be at least <%= @minimum_password_length %> characters.</em>
+        <% end %>
+        <em>Email address must be confirmed before access to site is granted.</em>
+        </details>
+      </div>
+
+    <% end %>
   </div>
 
-  <div class="field">
-    <%= f.label :date_of_birth %><br />
-    <%= f.date_select :dateofbirth, :include_blank => true, :start_year => Date.current.year - 13, :end_year => 1925  %>
+  <span>
+
+  </span>
+
+  <div class="deviselinks">
+    <ul>
+      <%= render "devise/shared/links" %>
+    </ul>
   </div>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
+  <footer>
+    Contact info
+  </footer>
+</body>
+</html>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>

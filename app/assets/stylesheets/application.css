@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  padding: 2%;
+}
