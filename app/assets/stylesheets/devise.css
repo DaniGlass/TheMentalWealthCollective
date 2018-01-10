@@ -1,0 +1,35 @@
+.devise{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.center-logo{
+  display: flex;
+  justify-content: center;
+}
+img{
+  width: 40%;
+  height: 40%;
+}
+h1{
+  display: flex;
+  justify-content: center;
+  font-family: georgia;
+}
+h2{
+  display: flex;
+  justify-content: center;
+  font-family: georgia;
+}
+.center-form{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.deviselinks{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
