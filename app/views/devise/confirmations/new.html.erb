@@ -1,16 +1,38 @@
-<h2>Resend confirmation instructions</h2>
-
-<%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resend Confirmation</title>
+</head>
+<body>
+  <div class='center-logo'>
+    <%= image_tag('SMbrain.png')%>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Resend confirmation instructions" %>
-  </div>
-<% end %>
+  <h1>The Mental Wealth Collective</h1>
+  <h2>Resend confirmation instructions</h2>
+  <div class="center-form">
+    <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
+      <%= devise_error_messages! %>
 
-<%= render "devise/shared/links" %>
+      <div class="field">
+        <%= f.email_field :email, autofocus: true, placeholder: "Email", value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Resend confirmation" %>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="deviselinks">
+    <ul>
+      <%= render "devise/shared/links" %>
+    </ul>
+  </div>
+
+</body>
+</html>
+
+
+
+
