@@ -10,13 +10,16 @@
 
   <body>
     <header class="app_header">
-      <% if user_signed_in? %>
-        <%= link_to "mission", root_path %>
-        <%= link_to "classes", classes_path %>
-        <%= link_to "guidelines",guidelines_path %>
-        <%= link_to "blog", blog_index_path %>
-        <%= link_to "Logout", destroy_user_session_path, {method: :delete} %>
-      <% end %>
+      <%= image_tag('SMbrain.png')%>
+      <nav>
+        <% if user_signed_in? %>
+          <%= link_to "Mission", root_path %>
+          <%= link_to "Classes", classes_path %>
+          <%= link_to "Guidelines",guidelines_path %>
+          <%= link_to "Blog", blog_index_path %>
+          <%= link_to "Logout", destroy_user_session_path, {method: :delete} %>
+        <% end %>
+      </nav>
     </header>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>

@@ -33,5 +33,41 @@ html {
   font-weight: bold;
   text-transform: capitalize;
   font-style: italic;
-
 }
+.app_header{
+  display: flex;
+  width: 100%;
+  padding: 2%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: groove #F8F8F8;
+  box-shadow: 0px 3px   #E8E8E8;
+}
+nav{
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: georgia;
+  font-size: 20px;
+  font-weight: bold;
+}
+img{
+  display: flex;
+  min-width: 35px;
+  min-height: 35px;
+  max-width: 10%;
+  max-height: 10%;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+

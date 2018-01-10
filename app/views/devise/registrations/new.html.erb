@@ -9,13 +9,9 @@
   <div class='center-logo'>
     <%= image_tag('SMbrain.png')%>
   </div>
-
-    <h1>The Mental Wealth Collective</h1>
-    <h2>Register to Grow Your Mental Wealth</h2>
-
-    <p class="errors">
-      <%= devise_error_messages! %>
-    </p>
+  <h1>The Mental Wealth Collective</h1>
+  <h2>Register to Grow Your Mental Wealth</h2>
+  <%= devise_error_messages! %>
   <div class='center-form'>
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
 
