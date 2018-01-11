@@ -27,8 +27,8 @@ module MediumAdapter
     end
 
     def show_title1
-      @title = @posts_titles[2].to_s.gsub("<title><![CDATA[", "<h2>")
-      @title = @title.gsub("]]></title>", "</h2>")
+      @title = @posts_titles[2].to_s.gsub("<title><![CDATA[", "<h3>")
+      @title = @title.gsub("]]></title>", "</h3>")
       @title
     end
 
@@ -52,8 +52,8 @@ module MediumAdapter
     end
 
     def show_title2
-      @title2 = @posts_titles[3].to_s.gsub("<title><![CDATA[", "<h2>")
-      @title2 = @title2.gsub("]]></title>", "</h2>")
+      @title2 = @posts_titles[3].to_s.gsub("<title><![CDATA[", "<h3>")
+      @title2 = @title2.gsub("]]></title>", "</h3>")
       @title2
     end
 
@@ -76,8 +76,8 @@ module MediumAdapter
     end
 
     def show_title3
-      @title3 = @posts_titles[4].to_s.gsub("<title><![CDATA[", "<h2>")
-      @title3 = @title3.gsub("]]></title>", "</h2>")
+      @title3 = @posts_titles[4].to_s.gsub("<title><![CDATA[", "<h3>")
+      @title3 = @title3.gsub("]]></title>", "</h3>")
       @title3
     end
 
@@ -100,8 +100,8 @@ module MediumAdapter
     end
 
     def show_title4
-      @title4 = @posts_titles[5].to_s.gsub("<title><![CDATA[", "<h2>")
-      @title4 = @title4.gsub("]]></title>", "</h2>")
+      @title4 = @posts_titles[5].to_s.gsub("<title><![CDATA[", "<h3>")
+      @title4 = @title4.gsub("]]></title>", "</h3>")
       @title4
     end
 
@@ -124,8 +124,8 @@ module MediumAdapter
     end
 
     def show_title5
-      @title5 = @posts_titles[6].to_s.gsub("<title><![CDATA[", "<h2>")
-      @title5 = @title5.gsub("]]></title>", "</h2>")
+      @title5 = @posts_titles[6].to_s.gsub("<title><![CDATA[", "<h3>")
+      @title5 = @title5.gsub("]]></title>", "</h3>")
       @title5
     end
 
