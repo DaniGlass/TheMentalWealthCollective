@@ -21,14 +21,14 @@ html {
   padding: 2%;
 }
 .notice{
-  text-align: right;
+  text-align: left;
   font-family: georgia;
   font-weight: bold;
   text-transform: capitalize;
   font-style: italic;
 }
 .alert{
-  text-align: right;
+  text-align: left;
   font-family: georgia;
   font-weight: bold;
   text-transform: capitalize;
@@ -53,15 +53,33 @@ nav{
   font-size: 20px;
   font-weight: bold;
 }
-img{
-  display: flex;
-  min-width: 35px;
-  min-height: 35px;
-  max-width: 10%;
-  max-height: 10%;
-  flex-wrap: wrap;
+#nav-logo{
+  width: 30%;
+  height: 30%;
+  min-height: 100px;
+  min-width: 100px;
 }
-
+footer{
+  display: flex;
+  width: 100%;
+  background: black;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2%;
+}
+.contact{
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+}
+.social-icon{
+  width: 15%;
+  height: 15%;
+}
+#mail-to{
+  font-family: georgia;
+}
 
 
 

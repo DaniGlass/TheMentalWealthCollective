@@ -10,6 +10,7 @@
   <h1>The Mental Wealth Collective</h1>
   <h2>Login to Grow Your Mental Wealth</h2>
 
+<br>
   <div class="center-form">
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="field">
@@ -24,15 +25,13 @@
     <% end %>
   </div>
 
+  <br>
+
   <div class="deviselinks">
     <ul>
       <%= render "devise/shared/links" %>
     </ul>
   </div>
-
-  <footer>
-    Contact info
-  </footer>
 </body>
 </html>
 
