@@ -8,7 +8,7 @@ end
 gem 'devise'
 gem "http"
 gem 'pg', '~> 0.18'
-gem 'sqlite3'
+
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
