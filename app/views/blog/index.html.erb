@@ -15,68 +15,82 @@
 <% @item5 = MediumAdapter.get_item5 %>
 
 <!-- first post -->
-<% if @item1 == nil %>
-<% else %>
-  <% post_title = MediumAdapter.show_title1 %>
-  <%= post_title.html_safe %>
-  <% date = MediumAdapter.show_date1 %>
-  <%= date.html_safe %>
-  <% content1 = MediumAdapter.show_content1 %>
-  <%= content1.html_safe %>
-  <% image = MediumAdapter.show_image1 %>
-  <%= image.html_safe %>
-<% end %>
+<div class="blog-post">
+  <% if @item1 == nil %>
+  <% else %>
+    <% post_title = MediumAdapter.show_title1 %>
+    <%= post_title.html_safe %>
+    <% date = MediumAdapter.show_date1 %>
+    Published: <%= date.html_safe %>
+    <% image = MediumAdapter.show_image1 %>
+    <%= image.html_safe %>
+    <% content1 = MediumAdapter.show_content1 %>
+    <%= content1.html_safe %>
+  <% end %>
+</div>
 
-<!-- second post -->
-<% if @item2 == nil %>
-<% else %>
-  <% post_title2 = MediumAdapter.show_title2 %>
-  <%= post_title2.html_safe %>
-  <% date2 = MediumAdapter.show_date2 %>
-  <%= date2.html_safe %>
-  <% content2 = MediumAdapter.show_content2 %>
-  <%= content2.html_safe %>
-  <% image2 = MediumAdapter.show_image2 %>
-  <%= image2.html_safe %>
-<% end %>
+<div class="blog-post">
+  <!-- second post -->
+  <% if @item2 == nil %>
+  <% else %>
+    <% post_title2 = MediumAdapter.show_title2 %>
+    <%= post_title2.html_safe %>
+    <% date2 = MediumAdapter.show_date2 %>
+    Published: <%= date2.html_safe %>
+    <% image2 = MediumAdapter.show_image2 %>
+    <%= image2.html_safe %>
+    <% content2 = MediumAdapter.show_content2 %>
+    <%= content2.html_safe %>
+  <% end %>
+</div>
 
-<!-- third post -->
-<% if @item3 == nil %>
-<% else %>
-  <% post_title3 = MediumAdapter.show_title3 %>
-  <%= post_title3.html_safe %>
-  <% date3 = MediumAdapter.show_date3 %>
-  <%= date3.html_safe %>
-  <% content3 = MediumAdapter.show_content3 %>
-  <%= content3.html_safe %>
-  <% image3 = MediumAdapter.show_image3 %>
-  <%= image3.html_safe %>
-<% end %>
+<div class="blog-post">
+  <!-- third post -->
+  <% if @item3 == nil %>
+  <% else %>
+    <% post_title3 = MediumAdapter.show_title3 %>
+    <%= post_title3.html_safe %>
+    <% date3 = MediumAdapter.show_date3 %>
+    Published: <%= date3.html_safe %>
+    <% image3 = MediumAdapter.show_image3 %>
+    <%= image3.html_safe %>
+    <% content3 = MediumAdapter.show_content3 %>
+    <%= content3.html_safe %>
+  <% end %>
+</div>
 
+<div class="blog-post">
 <!-- fourth post -->
-<% if @item4 == nil %>
-<% else %>
-  <% post_title4 = MediumAdapter.show_title4 %>
-  <%= post_title4.html_safe %>
-  <% date4 = MediumAdapter.show_date4 %>
-  <%= date4.html_safe %>
-  <% content4 = MediumAdapter.show_content4 %>
-  <%= content4.html_safe %>
-  <% image4 = MediumAdapter.show_image4 %>
-  <%= image4.html_safe %>
-<% end %>
+  <% if @item4 == nil %>
+  <% else %>
+    <% post_title4 = MediumAdapter.show_title4 %>
+    <%= post_title4.html_safe %>
+    <% date4 = MediumAdapter.show_date4 %>
+    Published: <%= date4.html_safe %>
+    <% image4 = MediumAdapter.show_image4 %>
+    <%= image4.html_safe %>
+    <% content4 = MediumAdapter.show_content4 %>
+    <%= content4.html_safe %>
+  <% end %>
+</div>
 
-<!-- fifth post -->
-<% if @item5 == nil %>
-<% else %>
-  <% post_title5 = MediumAdapter.show_title5 %>
-  <%= post_title5.html_safe %>
-  <% date5 = MediumAdapter.show_date5 %>
-  <%= date5.html_safe %>
-  <% content5 = MediumAdapter.show_content5 %>
-  <%= content5.html_safe %>
-  <% image5 = MediumAdapter.show_image5 %>
-  <%= image5.html_safe %>
-<% end %>
+<div class="blog-post">
+  <!-- fifth post -->
+  <% if @item5 == nil %>
+  <% else %>
+    <% post_title5 = MediumAdapter.show_title5 %>
+    <%= post_title5.html_safe %>
+    <% date5 = MediumAdapter.show_date5 %>
+    Published: <%= date5.html_safe %>
+    <% image5 = MediumAdapter.show_image5 %>
+    <%= image5.html_safe %>
+    <% content5 = MediumAdapter.show_content5 %>
+    <%= content5.html_safe %>
+  <% end %>
+</div>
+
+<div id="static-box">
+  <h4> Want to read more? <a href="https://medium.com/@ccmarie.clark"> Visit us on Medium!</a> </h4>
+</div>
 </body>
 </html>
