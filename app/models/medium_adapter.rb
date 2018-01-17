@@ -137,7 +137,7 @@ module MediumAdapter
         @item5.css("p").to_s
     end
 
-    def show_image4
+    def show_image5
       img = @item5.css("img")
       img[0].to_s
     end
