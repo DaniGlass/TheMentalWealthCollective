@@ -16,9 +16,9 @@
         </div>
       <nav>
         <% if user_signed_in? %>
-          <%= link_to "Our Mission", root_path %>
+          <%= link_to "About", root_path %>
           <%= link_to "Classes", classes_path %>
-          <%= link_to "Class Guidelines",guidelines_path %>
+          <%= link_to "Community",guidelines_path %>
           <%= link_to "Blog", blog_index_path %>
           <%= link_to "Logout", destroy_user_session_path, {method: :delete} %>
         <% end %>
@@ -35,16 +35,21 @@
     <br>
     <footer>
       <div class="contact">
-        <p>The Mental Wealth Collective</p>
-        <p> Need Help? <a id="mail-to" href="mailto:hello@mentalwealthcollective.com">Reach Out.</a></p>
+        The Mental Wealth Collective</div>
+        <div class="contact"> Need Help? <br> <a id="mail-to" href="mailto:hello@mentalwealthcollective.com">Reach Out.</a>
       </div>
-      <div class="social-icon">
-        <a href="https://www.instagram.com/thementalwealthcollective/"><%=image_tag("insta-logo.png")%></a>
-        <a href="https://www.facebook.com/TheMentalWealthCollective/"><%=image_tag("facebook-logo.png")%></a>
-        <a href="https://twitter.com/search?q=%40GetMentalWealth&src=typd"><%=image_tag("twitter-logo.png")%></a>
-        <a href="mailto:hello@mentalwealthcollective.com"><%=image_tag("mail-icon.png")%></a>
+      <br>
+      <div class="social-wrap">
+        <div class="social-icon">
+          <a href="https://www.instagram.com/thementalwealthcollective/"><%=image_tag("insta-logo.png")%></a>
+        </div>
+        <div class="social-icon">
+          <a href="https://www.facebook.com/TheMentalWealthCollective/"><%=image_tag("facebook-logo.png")%></a>
+        </div>
+        <div class="social-icon">
+          <a href="https://twitter.com/search?q=%40GetMentalWealth&src=typd"><%=image_tag("twitter-logo.png")%></a>
+        </div>
       </div>
-
     </footer>
   </body>
 </html>
