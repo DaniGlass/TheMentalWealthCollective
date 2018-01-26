@@ -8,7 +8,7 @@ Rails.application.configure do
       user_name:      ENV['SENDMAIL_USERNAME'],
       password:       ENV['SENDMAIL_PASSWORD'],
       domain:         ENV['MAIL_HOST'],
-      address:       'smtp.gmail.com',
+      address:       'smtp.TheMentalWealthCollective.com',
       port:          '587',
       authentication: :plain,
       enable_starttls_auto: true
