@@ -7,7 +7,7 @@
   padding-right: 10%;
   padding-left: 10%;
   flex-direction: column;
-  font-family: georgia;
+  font-family: helvetica;
   padding-top: 5%;
   padding-bottom: 5%;
   box-shadow: 0px 3px   #E8E8E8;
@@ -15,7 +15,7 @@
 h4{
   display: flex;
   width: 100%;
-  font-family: georgia;
+  font-family: helvetica;
   justify-content: center;
 }
 #static-box{
@@ -32,3 +32,9 @@ h3{
   width: 100%;
   justify-content: flex-start;
 }
+.page_img{
+  width: 30%;
+  height: 30%
+}
+
+

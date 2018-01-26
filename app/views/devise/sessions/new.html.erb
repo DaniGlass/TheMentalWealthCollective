@@ -4,13 +4,13 @@
   <title>Login</title>
 </head>
 <body>
+  <h3 id="sessions_comp">The Mental Wealth Collective</h3>
   <div class='center-logo'>
     <%= image_tag('SMbrain.png')%>
   </div>
-  <h1>The Mental Wealth Collective</h1>
-  <h2>Fighting mental illness with social fitness.</h2>
+  <h2>Fight mental illness with social fitness.</h2>
   <br>
-  <h2>Join us. Grow your Mental Wealth.</h2>
+  <h3 id="log_actioncall">Sign-in to learn more about classes.</h3>
 
 <br>
   <div class="center-form">
@@ -28,7 +28,29 @@
   </div>
 
   <br>
+  <br>
+    <blockquote> <h3> “Exercise is the single best thing you can do for your brain in terms of mood, memory, and learning.” </h3><em>–John Ratey, MD, Associate Clinical Professor of Psychiatry at Harvard Medical School</em></blockquote>
+<br>
+<br>
+  <blockquote><h3>1 in 5 adults experience mental illness each year in the U.S.</h3></blockquote>
+<br>
+<br>
+  <h3 id="log_actioncall">Sign-in to learn more about classes.</h3>
 
+<br>
+  <div class="center-form">
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="field">
+        <%= f.email_field :email, autofocus: true, placeholder: "Email" %>
+        <%= f.password_field :password, autocomplete: "off", placeholder: "Password" %>
+        <%= f.submit "Log in" %>
+        <% if devise_mapping.rememberable? -%>
+            <%= f.check_box :remember_me %>
+            <%= f.label "Remember Me?" %>
+        <% end -%>
+      </div>
+    <% end %>
+  </div>
   <div class="deviselinks">
     <ul>
       <%= render "devise/shared/links" %>
