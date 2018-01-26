@@ -8,18 +8,28 @@
   justify-content: center;
 }
 img{
-  width: 40%;
-  height: 40%;
+  width: 27%;
+  height: 27%;
 }
 h1{
   display: flex;
   justify-content: center;
-  font-family: georgia;
+  font-family: helvetica;
 }
 h2{
   display: flex;
   justify-content: center;
-  font-family: georgia;
+  font-family: helvetica;
+}
+#log_actioncall{
+  display: flex;
+  justify-content: center;
+  font-family: helvetica;
+}
+#sessions_comp{
+  display: flex;
+  justify-content: left;
+  font-family: helvetica;
 }
 .center-form{
   display: flex;

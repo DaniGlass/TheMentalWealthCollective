@@ -12,7 +12,7 @@
     <% if user_signed_in? %>
       <header class="app_header">
         <div id='nav-logo'>
-          <%= image_tag('SMbrain.png')%>
+          <%= image_tag('SMbrain.png', :id => "nav-logo") %>
         </div>
       <nav>
         <% if user_signed_in? %>
