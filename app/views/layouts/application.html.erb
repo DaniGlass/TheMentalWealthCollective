@@ -27,6 +27,8 @@
     </header>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+    <br>
+    <br>
     <%= yield %>
     <br>
     <br>
@@ -36,7 +38,6 @@
     <footer>
       <div class="contact">
         The Mental Wealth Collective</div>
-        <div class="contact"> Need Help? <br> <a id="mail-to" href="mailto:hello@mentalwealthcollective.com">Reach Out.</a>
       </div>
       <br>
       <div class="social-wrap">
@@ -48,6 +49,9 @@
         </div>
         <div class="social-icon">
           <a href="https://twitter.com/search?q=%40GetMentalWealth&src=typd"><%=image_tag("twitter-logo.png")%></a>
+        </div>
+        <div class="social-icon">
+          <a id="mail-to" href="mailto:hello@mentalwealthcollective.com"><%=image_tag("Mail-icon.png")%></a>
         </div>
       </div>
     </footer>

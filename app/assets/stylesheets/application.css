@@ -40,8 +40,7 @@ html {
   padding: 2%;
   justify-content: space-between;
   flex-wrap: wrap;
-  border-bottom: groove #F8F8F8;
-  box-shadow: 0px 3px   #E8E8E8;
+  text-decoration: none;
 }
 nav{
   display: flex;
@@ -50,8 +49,29 @@ nav{
   align-items: center;
   flex-wrap: wrap;
   font-family: helvetica;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
+  text-decoration: none;
+
+}
+a:link {
+    text-decoration: none;
+    font-family: helvetica;
+}
+
+a:visited {
+    text-decoration: none;
+    font-family: helvetica;
+}
+
+a:hover {
+    text-decoration: none;
+    font-family: helvetica;
+}
+
+a:active {
+    text-decoration: none;
+    font-family: helvetica;
 }
 #nav-logo{
   width: 30%;
@@ -73,10 +93,12 @@ footer{
   display: flex;
   width: 100%;
   justify-content: center;
+  font-family: helvetica;
 }
 .social-icon{
-  width: 7%;
-  height: 7%;
+  width: 10%;
+  height: 10%;
+  text-align: center;
 }
 .social-wrap{
   display: flex;
