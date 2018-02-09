@@ -1,5 +1,12 @@
 <p>Welcome <%= @resource.first_name %>!</p>
 
-<p>You can confirm your account email through the link below:</p>
+<p>Thank you for signing up.</p>
+<p>
+Please click on the link below to confirm your account and gain full access to The Mental Wealth Collective. We can’t wait to show you what’s ahead.
+</p>
 
 <p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
+
+<div class='center-logo'>
+    <%= image_tag('SMbrain.png')%>
+</div>
