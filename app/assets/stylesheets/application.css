@@ -49,7 +49,7 @@ nav{
   align-items: center;
   flex-wrap: wrap;
   font-family: helvetica;
-  font-size: 16px;
+/*  font-size: 16px;*/
   font-weight: bold;
   text-decoration: none;
 
@@ -57,21 +57,25 @@ nav{
 a:link {
     text-decoration: none;
     font-family: helvetica;
+    color: gray;
 }
 
 a:visited {
     text-decoration: none;
     font-family: helvetica;
+    color: gray;
 }
 
 a:hover {
     text-decoration: none;
     font-family: helvetica;
+    color: black;
 }
 
 a:active {
     text-decoration: none;
     font-family: helvetica;
+    color: black;
 }
 #nav-logo{
   width: 30%;
@@ -108,7 +112,10 @@ footer{
 #mail-to{
   font-family: helvetica;
 }
-
+body{
+  font-family: helvetica;
+  color: gray;
+}
 
 
 
