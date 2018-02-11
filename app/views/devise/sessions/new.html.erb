@@ -19,29 +19,6 @@
       </div>
     <% end %>
   </div>
-
-  <br>
-  <br>
-    <blockquote> <h3> “Exercise is the single best thing you can do for your brain in terms of mood, memory, and learning.” </h3><em>–John Ratey, MD, Associate Clinical Professor of Psychiatry at Harvard Medical School</em></blockquote>
-<br>
-<br>
-  <blockquote><h3>1 in 5 adults experience mental illness each year in the U.S.</h3></blockquote>
-<br>
-<br>
-<br>
-<br>
-  <h2 id="log_actioncall">Grow Your Mental Wealth</h2>
-
-<br>
-  <div class="center-form">
-    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-      <div class="field">
-        <%= f.email_field :email, autofocus: true, placeholder: "Email" %>
-        <%= f.password_field :password, autocomplete: "off", placeholder: "Password" %>
-        <%= f.submit "Log in" %>
-      </div>
-    <% end %>
-  </div>
   <div class="deviselinks">
     <ul>
       <%= render "devise/shared/links" %>

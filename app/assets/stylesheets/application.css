@@ -23,16 +23,14 @@ html {
 .notice{
   text-align: left;
   font-family: helvetica;
-  font-weight: bold;
-  text-transform: capitalize;
+  font-weight: normal;
   font-style: italic;
 }
 .alert{
   text-align: left;
   font-family: helvetica;
-  font-weight: bold;
-  text-transform: capitalize;
   font-style: italic;
+  font-weight: normal;
 }
 .app_header{
   display: flex;
@@ -49,7 +47,7 @@ nav{
   align-items: center;
   flex-wrap: wrap;
   font-family: helvetica;
-/*  font-size: 16px;*/
+  font-size: 20px;
   font-weight: bold;
   text-decoration: none;
 
@@ -57,13 +55,13 @@ nav{
 a:link {
     text-decoration: none;
     font-family: helvetica;
-    color: gray;
+    color: #374049;
 }
 
 a:visited {
     text-decoration: none;
     font-family: helvetica;
-    color: gray;
+    color: #374049;
 }
 
 a:hover {
@@ -112,11 +110,13 @@ footer{
 #mail-to{
   font-family: helvetica;
 }
+#mail-to:hover{
+  color: #6666ff;
+}
 body{
   font-family: helvetica;
-  color: gray;
+  color: #374049;
 }
-
 
 
 

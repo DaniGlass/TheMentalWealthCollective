@@ -10,7 +10,6 @@
   font-family: helvetica;
   padding-top: 5%;
   padding-bottom: 5%;
-  box-shadow: 0px 3px   #E8E8E8;
   word-wrap: wrap;
 }
 h4{
@@ -37,5 +36,16 @@ h3{
   width: 30%;
   height: 30%
 }
-
+.blog_image{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  flex-grow: 1;
+}
+.blog_image>img{
+  max-width: 100%;
+  height: 100%;
+  flex-grow: 1
+}
 
