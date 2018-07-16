@@ -10,20 +10,17 @@
   </head>
 
   <body>
-    <% if user_signed_in? %>
+
       <header class="app_header">
-        <div id='nav-logo'>
-          <%= image_tag('SMbrain.png', :id => "nav-logo") %>
-        </div>
+
+          <div id='nav-logo'>
+            <%= link_to image_tag('SMbrain.png', :id => "nav-logo"), root_path %>
+          </div>
       <nav>
-        <% if user_signed_in? %>
-          <%= link_to "About", root_path %>
+          <%= link_to "About", mission_index_path %>
           <%= link_to "Classes", classes_path %>
           <%= link_to "Community",guidelines_path %>
           <%= link_to "Blog", blog_index_path %>
-          <%= link_to "Logout", destroy_user_session_path, {method: :delete} %>
-        <% end %>
-    <% end -%>
       </nav>
     </header>
     <p class="notice"><%= notice %></p>
