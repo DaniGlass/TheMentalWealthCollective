@@ -4,15 +4,27 @@
   <title>Home</title>
 </head>
 <body>
-  <div class='center-logo'>
-    <%= image_tag('SMbrain.png')%>
+  <br>
+  <h2>The Mental Wealth Collective</h2><br>
+  <div class="content_home_large">
+    <b>Accessible and affordable group exercise, created for social recovery in safe spaces.</b>
   </div>
   <br>
   <div class="content_home">
-  <br>
-    <b>The Mental Wealth Collective provides a safe space for social recovery through accessible and affordable group exercise. </b>
+    <p> The Mental Wealth Collective provides a safe space for social recovery through accessible and affordable group exercise.</p>
   </div>
-  <br>
+  <div class="center">
+    <p class="notice"><%= notice %></p>
+    <%= form_with scope: :subscriber, url: subscriber_index_path, local: true do |form| %>
+    <p>
+      <%= form.label :email %>
+      <%= form.text_field :email %>
+    </p>
+    <p>
+      <%= form.submit %>
+    </p>
+    <% end %>
+  </div>
   <div class="color_block">
     <%= image_tag('yellow_block.jpg')%>
   </div>
