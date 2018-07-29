@@ -9,6 +9,7 @@ gem 'devise'
 gem "http"
 gem 'pg', '~> 0.18'
 gem 'gibbon', '~> 3.0.0'
+gem 'dotenv-rails'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
