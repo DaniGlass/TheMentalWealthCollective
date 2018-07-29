@@ -1,3 +1,4 @@
 class MailchimpController < ApplicationController
 
+
 end
