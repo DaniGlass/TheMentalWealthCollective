@@ -4,6 +4,7 @@
   <title>Home</title>
 </head>
 <body>
+  <p class="notice"><%= notice %></p>
   <br>
   <h2>The Mental Wealth Collective</h2><br>
   <div class="content_home_large">
@@ -58,10 +59,9 @@
 <br>
 <div class="center"><p>Sign up for our mailing list.</p></div>
 <div class="center">
-    <p class="notice"><%= notice %></p>
     <%= form_with scope: :subscriber, url: subscriber_index_path, local: true do |form| %>
     <p>
-      <%= form.label :email_address %>
+      <%= form.label :email %>
       <%= form.text_field :email %>
     </p>
     <p>
